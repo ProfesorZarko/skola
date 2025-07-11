@@ -13,13 +13,13 @@ export default function MareInputForm() {
             }
         })
     }
-    const onSubmit=(e)=>{
+    const handleSubmit=(e)=>{
         e.preventDefault();
         console.log(user);
     }
   return (
     <div>
-        <form onSubmit={onSubmit}>
+        <form onSubmit={handleSubmit}>
             <h2>name: {user.name} & age : {user.age}</h2>
             <label htmlFor="name"> ime: </label>
            <input name="name" id='name' type="text" placeholder="ime"
