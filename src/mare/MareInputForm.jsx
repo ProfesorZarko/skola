@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function MareInputForm() {
+export default function MareInputForm({dodajGa}) {
     const [user, setUser]=useState({
         name: '',
         age: ''
@@ -15,7 +15,11 @@ export default function MareInputForm() {
     }
     const handleSubmit=(e)=>{
         e.preventDefault();
-        console.log(user);
+        dodajGa(user)
+        setUser({
+            name: '',
+            age: ''
+        })
     }
   return (
     <div>
