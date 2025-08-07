@@ -1,6 +1,5 @@
 import React from 'react';
 import './Mare.css';
-import MareInputForm from './MareInputForm';
 import MareLaki7 from './MareLaki7';
 import MareList from './MareList';
 import MareJoke from './MareJoke';
